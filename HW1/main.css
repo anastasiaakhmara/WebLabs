@@ -1,0 +1,402 @@
+
+.product-item {
+	background-color: rgb(200, 200, 200);
+	display: inline-block;
+	height: 25px;
+	padding: 5px;
+	border-radius: 5px;
+    color: rgb(82, 82, 82);
+}
+
+.amount {
+	background-color: rgb(255, 123, 0);
+	border-radius: 10px;
+	color: white;
+	display: inline-block;
+	height: 20px;
+	width: 20px;
+	text-align: center;
+}
+
+.not-bought {
+    text-decoration: line-through;
+}
+.product-by-input[value] {
+    outline: none;
+    border-color: rgb(36, 137, 174);
+    box-shadow: 0px 0px 5px 0px rgb(36, 137, 174);
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 10px 0px;
+    padding-left: 10px;
+}
+#addItemButton{
+   outline: none; 
+   border: 0px;
+   color: white;
+   background-color: rgb(76, 192, 234);
+   border-bottom: 5px solid rgb(36, 137, 174);
+   text-align: center;
+   border-top-right-radius: 5px;
+   border-bottom-right-radius: 5px;
+   height: 100%;
+   width: 20%;
+   box-sizing: border-box;
+   padding: 10px;
+   font-family: Arial, Helvetica, sans-serif;
+   font-size: medium;
+   font-weight: bold;
+}
+.wrapper {
+    display: flex;
+    gap: 5%;
+    padding: 50px 15px 100px 15px;
+    height: 40vh;
+    font-family: Arial, Helvetica, sans-serif;
+   
+
+    
+}
+body {
+    height: 100vh;
+    background-color: rgb(210, 210, 210);
+}
+h2 {
+    border-bottom: 1px solid rgb(206, 205, 205);
+    padding-left: 20px;
+    padding-bottom: 25px;
+    padding-top: 25px;
+    margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.container {
+    border: none;
+    border-radius: 4px;
+    box-shadow: 0px 0px 10px 0px grey;
+    background-color: white;
+    font-size: large;
+}
+.backet-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex:2;
+ 
+}
+.statictics-container {
+    flex:1;
+}
+.product-list{
+    padding-bottom: 25px;
+    padding-top: 20px;
+    padding-left: 20px;
+}
+.remain-product-list{
+    border-bottom: 1px solid rgb(206, 205, 205);
+}
+.item-of-bucket{
+    border-top: 1px solid rgb(205, 205, 205);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px 10px 20px;
+}
+#item-input{
+    border: 1px solid rgb(192, 192, 192);
+    padding: 10px;
+    border-bottom-left-radius: 4px;
+    border-top-left-radius: 4px;
+    width: 80%;
+    height:100%;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: medium;
+}
+.search {
+    border: none;
+    display: flex;
+    align-items: center;
+    padding: 20px 10px 20px 10px;
+    
+}
+label {
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 20px 0px;
+}
+.count {
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(215, 215, 215);
+    border-radius: 5px;
+    padding: 5px 10px;
+}
+.button-decrease {
+   outline: none; 
+   border: 0px;
+   color: white;
+   background-color: rgb(229, 39, 39);
+   border-bottom: 5px solid rgb(64, 13, 13);
+   text-align: center;
+   border-radius: 50%;
+   height: 40px;
+   width: 40px;
+   font-size: 15px;
+}
+.button-increase {
+   outline: none; 
+   border: 0px;
+   color: white;
+   background-color: rgb(38, 207, 44);
+   border-bottom: 5px solid rgb(23, 93, 16);
+   text-align: center;
+   border-radius: 50%;
+   height: 40px;
+   width: 40px;
+   font-size: 15px;
+}
+.btn-cancel{
+   outline: none; 
+   border: 0px;
+   color: white;
+   background-color: rgb(229, 39, 39);
+   border-bottom: 5px solid rgb(64, 13, 13);
+   text-align: center;
+   border-radius: 8px;
+   height: 40px;
+   width: 40px;
+   font-size: 15px;
+}
+.btn-bought-or-unbought{
+   outline: none; 
+   border: 0px;
+   color: rgb(60, 60, 60);
+   background-color: rgb(202, 202, 202);
+   border-bottom: 5px solid rgb(103, 103, 103);
+   text-align: center;
+   border-radius: 5px;
+   height: 40px;
+   width: 120px;
+   font-size: 15px;
+   font-family: Arial, Helvetica, sans-serif;
+}
+
+.badge-buy-list{
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    background-color:purple;
+    border: 1px solid purple;
+    color: white;
+    height:5%;
+    text-align: left;
+    padding: 10px 20px;
+    margin-left: 1%;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    transition: height 1s ease-in-out, background-color 1s ease-in-out;
+    overflow: hidden;
+}
+.badge-buy-list:hover {
+    height: 12%;
+    background: blue;
+}
+.badge-buy-list h6, p {
+    margin:0px;
+}
+.button-increase,
+.button-decrease,
+.btn-cancel,
+.btn-bought-or-unbought,#addItemButton {
+    position: relative;
+    cursor: pointer;
+}
+.button-increase::after,
+.button-decrease::after,
+.btn-cancel::after,
+.btn-bought-or-unbought::after,
+#addItemButton::after {
+    content: attr(data-tooltip);
+    position: absolute;
+    bottom: 120%;
+    left: 50%;
+    transform: translateX(-50%) scale(0.5);
+    background: rgb(115, 37, 146);
+    color: white;
+    padding: 10px 15px;
+    border-radius: 10px;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, transform 0.3s ease, visibility 0.3s;
+    font-size: 14px;
+    white-space: nowrap;
+}
+.button-increase:hover::after,
+.button-decrease:hover::after,
+.btn-cancel:hover::after,
+.btn-bought-or-unbought:hover::after,
+#addItemButton:hover::after {
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(-50%) scale(1);
+}
+@media screen and (min-width: 650px) and (max-width: 870px) {
+    .search {
+        padding: 16px 8px;
+    }
+
+    #item-input {
+        width: 80%;
+        padding: 8px;
+        font-size: 14px;
+    }
+    #product-cheese {
+        width: 10%;
+        padding: 8px;
+        font-size: 14px;
+    }
+
+    #addItemButton {
+        width: 22%;
+        padding: 8px;
+        font-size: 14px;
+    }
+
+    .item-of-bucket {
+        padding: 10px 18px 10px 18px;
+    }
+
+    .item-of-bucket label,
+    .item-of-bucket .product-by-input {
+        font-size: 18px;
+    }
+
+    .product-by-input[value] {
+        padding: 8px 0px;
+        padding-left: 8px;
+    }
+
+    .button-increase,
+    .button-decrease,
+    .btn-cancel {
+        width: 38px;
+        height: 38px;
+        font-size: 14px;
+    }
+
+    .btn-bought-or-unbought {
+        width: 110px;
+        height: 38px;
+        font-size: 14px;
+    }
+
+    .count {
+        padding: 4px 8px;
+        font-size: 14px;
+    }
+
+    h2 {
+        padding-left: 18px;
+        padding-top: 22px;
+        padding-bottom: 22px;
+        font-size: 19px;
+    }
+
+    .product-list {
+        padding-left: 18px;
+        padding-top: 18px;
+        padding-bottom: 22px;
+    }
+
+    .badge-buy-list {
+        padding: 8px 18px;
+    }
+}
+@media screen and (max-width: 650px) {
+    .wrapper {
+        flex-direction: column;
+        gap: 20px;
+        padding: 20px 10px 50px 10px;
+    }
+
+    .search {
+        padding: 14px 8px;
+    }
+
+    #item-input {
+        width: 74%;
+        padding: 6px;
+        font-size: 13px;
+    }
+
+    #addItemButton {
+        width: 26%;
+        padding: 6px;
+        font-size: 13px;
+    }
+
+    .item-of-bucket {
+        padding: 8px 14px 8px 14px;
+    }
+
+    .item-of-bucket label,
+    .item-of-bucket .product-by-input {
+        font-size: 16px;
+    }
+
+    .product-by-input[value] {
+        padding: 6px 0px;
+        padding-left: 6px;
+    }
+
+    .button-increase,
+    .button-decrease,
+    .btn-cancel {
+        width: 32px;
+        height: 32px;
+        font-size: 13px;
+    }
+
+    .btn-bought-or-unbought {
+        width: 98px;
+        height: 32px;
+        font-size: 13px;
+    }
+
+    .count {
+        padding: 3px 7px;
+        font-size: 13px;
+    }
+
+    h2 {
+        padding-left: 14px;
+        padding-top: 18px;
+        padding-bottom: 18px;
+        font-size: 18px;
+    }
+
+    .product-list {
+        padding-left: 14px;
+        padding-top: 16px;
+        padding-bottom: 20px;
+    }
+     #product-cheese {
+        width: 10%;
+        padding: 8px;
+        font-size: 14px;
+    }
+    
+}
+@media print {
+   .badge-buy-list{
+    background-color: white;
+    border: 1 px solid purple;
+   }
+   .badge-buy-list h3{
+    display: none;
+   }
+   .badge-buy-list p{
+    padding-top: 10px;
+   }
+
+}

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Кошик покупок</title>
+    <link rel="stylesheet" type="text/css" href="main.css" />
+</head>
+<body>
+    <main class="wrapper">
+        <span class="backet-container container">
+            <div class="search"> 
+                <input type="text" id="item-input" placeholder="Назва товару">
+                <button id="addItemButton" data-tooltip="Додати товар">Додати</button>
+            </div>
+            <div class="item-of-bucket">
+                <label class="not-bought">Помідори</label>
+                <span class="count">2</span>
+                <button class="btn-unbought btn-bought-or-unbought" data-tooltip="Позначити як не куплено">Не куплено</button>
+            </div>
+            <div class="item-of-bucket">
+                <label for="product-cookie">Печиво</label>
+               <div>
+                    <button class="button-decrease" id="product-cookie-decrease" data-tooltip="Зменшити кількість">-</button>
+                    <span class="count">2</span>
+                    <button class="button-increase" id="product-cookie-increase" data-tooltip="Збільшити кількість">+</button>
+               </div>
+                <div>
+                    <button class="btn-bought btn-bought-or-unbought" data-tooltip="Позначити як куплено">Куплено</button>
+                    <button class="btn-cancel" data-tooltip="Видалити товар">×</button>
+                </div>
+            </div>
+            <div class="item-of-bucket">
+                <input type="text" id="product-cheese" class="product-by-input" name="Продукт" value="Сир">
+               <div>
+                    <button class="button-decrease" disabled data-tooltip="Зменшити кількість">-</button>
+                    <span class="count">1</span>
+                    <button class="button-increase" data-tooltip="Збільшити кількість">+</button>
+               </div>
+                <div>
+                    <button class="btn-bought btn-bought-or-unbought" data-tooltip="Позначити як куплено">Куплено</button>
+                    <button class="btn-cancel" data-tooltip="Видалити товар">×</button>
+                </div>
+            </div>
+   
+    
+        </span>
+        <span class="statictics-container container">
+            <h2>Залишилося</h2>
+            <div class="remain-product-list product-list">
+                <span class="product-item">
+		        Печиво
+		        <span class="amount">2</span>
+	            </span>
+                <span class="product-item">
+		        Сир
+		        <span class="amount">1</span>
+	            </span>
+            </div>
+
+            <h2>Куплено</h2>
+            <div class="bought-product-list product-list">
+                <span class="product-item not-bought">
+                     Помідори
+                <span class="amount not-bought">2</span>
+                </span>
+            </div>
+        </span>
+
+        <span class="badge-buy-list">
+                <h3>Buy List</h3>
+                <p>Created by:</p>
+                <h6>Anastasia Khmara</h6>
+        </span>
+    </main>
+</body>
+</html>
