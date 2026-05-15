@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="uk">
 <head>
     <meta charset="UTF-8">
@@ -13,12 +14,12 @@
                 <button id="addItemButton" data-tooltip="Додати товар">Додати</button>
             </div>
             <div class="item-of-bucket">
-                <label class="not-bought">Помідори</label>
+                <span class="not-bought product-name">Помідори</span>
                 <span class="count">2</span>
                 <button class="btn-unbought btn-bought-or-unbought" data-tooltip="Позначити як не куплено">Не куплено</button>
             </div>
             <div class="item-of-bucket">
-                <label for="product-cookie">Печиво</label>
+                <span class="product-name">Печиво</span>
                <div>
                     <button class="button-decrease" id="product-cookie-decrease" data-tooltip="Зменшити кількість">-</button>
                     <span class="count">2</span>
@@ -30,6 +31,7 @@
                 </div>
             </div>
             <div class="item-of-bucket">
+				<label for="product-cheese">Сир</label>
                 <input type="text" id="product-cheese" class="product-by-input" name="Продукт" value="Сир">
                <div>
                     <button class="button-decrease" disabled data-tooltip="Зменшити кількість">-</button>
@@ -69,7 +71,7 @@
         <span class="badge-buy-list">
                 <h3>Buy List</h3>
                 <p>Created by:</p>
-                <h6>Anastasia Khmara</h6>
+                <span>Anastasia Khmara</span>
         </span>
     </main>
 </body>
